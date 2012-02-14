@@ -125,8 +125,7 @@ au BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 
-" load the plugin and indent settings for the detected filetype
-filetype plugin indent on
+filetype plugin indent on " load the plugin and indent settings for the detected filetype
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
@@ -180,12 +179,6 @@ map Q gq                " Don't use Ex mode, use Q for formatting
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-
-" Enable file type detection.
-" Use the default filetype settings, so that mail gets 'tw' set to 72,
-" 'cindent' is on in C files, etc.
-" Also load indent files, to automatically do language-dependent indenting.
-filetype plugin indent on
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
@@ -303,8 +296,6 @@ nmap ]] ]}
 
 let Tlist_Close_On_Select=1
 
-
-filetype plugin on
 
 let html_use_css = 1
 let g:lisp_rainbow = 1
