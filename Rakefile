@@ -12,6 +12,7 @@ desc "clone all repos"
 task :clone
 {
    "ack"                => "git://github.com/mileszs/ack.vim.git",
+   "bundler"            => "git://github.com/tpope/vim-bundler.git",
    "chef"               => "git://github.com/t9md/vim-chef.git",
    "coffee-script"      => "git://github.com/kchmck/vim-coffee-script.git",
    "color-sampler"      => "git://github.com/vim-scripts/Color-Sampler-Pack.git",
@@ -31,6 +32,7 @@ task :clone
    "puppet"             => "git://github.com/ajf/puppet-vim.git",
    "rails"              => "git://github.com/tpope/vim-rails.git",
    "ruby"               => "git://github.com/vim-ruby/vim-ruby.git",
+   "rake"               => "git://github.com/tpope/vim-rake.git",
    "rspec"              => "git://github.com/taq/vim-rspec.git",
    "rvm"                => "git://github.com/tpope/vim-rvm.git",
    "scala"              => "git://github.com/bdd/vim-scala.git",
