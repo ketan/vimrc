@@ -63,6 +63,7 @@ set smartcase             " overwride ignorecase if search pattern contains uppe
 set smarttab              " tabs in front of a line indents it
 set softtabstop=2         " Use 2 spaces instead of instead of tabs
 set statusline=%{fugitive#statusline()}\ <%F%h%m%r%h%w%y\ %{&ff}\ %{exists('g:loaded_rvm')?rvm#statusline():''}%=\ %l:%c%V\ %L\ %P
+set switchbuf=useopen     " Jump to the first open window that contains the buffer, when it is available.
 set t_Co=256              " use 256 colors, always!
 set t_vb=                 " disable terminal bell
 set tabstop=2             " Tabs are 2 spaces
