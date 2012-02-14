@@ -29,6 +29,7 @@ task :clone
    "nerdtree"           => "git://github.com/wycats/nerdtree.git",
    "puppet"             => "git://github.com/ajf/puppet-vim.git",
    "rails"              => "git://github.com/tpope/vim-rails.git",
+   "ruby"               => "git://github.com/vim-ruby/vim-ruby.git",
    "rspec"              => "git://github.com/taq/vim-rspec.git",
    "rvm"                => "git://github.com/tpope/vim-rvm.git",
    "scala"              => "git://github.com/bdd/vim-scala.git",
@@ -81,7 +82,7 @@ task :install_vimrc do
     dest = File.expand_path("~/.#{file}")
     rm_f  dest
     ln_s  File.expand_path("../#{file}", __FILE__), dest
-  end  
+  end
 end
 
 desc "default"
