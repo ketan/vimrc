@@ -13,6 +13,7 @@ task :clone
 {
    "ack"                => "git://github.com/mileszs/ack.vim.git",
    "chef"               => "git://github.com/t9md/vim-chef.git",
+   "coffee-script"      => "git://github.com/kchmck/vim-coffee-script.git",
    "color-sampler"      => "git://github.com/vim-scripts/Color-Sampler-Pack.git",
    "cucumber"           => "git://github.com/tpope/vim-cucumber.git",
    "endwise"            => "git://github.com/tpope/vim-endwise.git",
@@ -43,7 +44,6 @@ task :clone
    "taglist"            => "git://github.com/vim-scripts/taglist.vim.git",
    "textile"            => "git://github.com/timcharper/textile.vim.git",
    "unimpaired"         => "git://github.com/tpope/vim-unimpaired.git",
-   "coffee-script"      => "git://github.com/kchmck/vim-coffee-script.git",
    "vividchalk"         => "git://github.com/tpope/vim-vividchalk.git",
    "zoomwin"            => "git://github.com/vim-scripts/ZoomWin.git",
    # "align"            =>   "git://github.com/tsaleh/vim-align.git",
