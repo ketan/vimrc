@@ -1,3 +1,8 @@
+if has("gui_running")
+  " Automatically resize splits when resizing MacVim window
+  autocmd VimResized * wincmd =
+endif
+
 if has("gui_macvim")
   set guifont=Monaco:h14      " fonts for macvim
   " Fullscreen takes up entire screen

@@ -174,11 +174,6 @@ let macvim_hig_shift_movement = 1
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim
 
-if has("gui_running")
-  " Automatically resize splits when resizing MacVim window
-  autocmd VimResized * wincmd =
-endif
-
 map Q gq                " Don't use Ex mode, use Q for formatting
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
