@@ -174,7 +174,9 @@ let macvim_hig_shift_movement = 1
 " % to bounce from do to end etc.
 runtime! macros/matchit.vim
 
-map Q gq                " Don't use Ex mode, use Q for formatting
+" FIXME: sometimes causes the record window to open because, you did not
+" release SHIFT in time.
+" map Q gq                " Don't use Ex mode, use Q for formatting.
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
