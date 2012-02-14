@@ -73,7 +73,7 @@ set viminfo^=!            " Add recently accessed projects menu (project plugin)
 set visualbell            " don't beep, use a visual bell instead
 set wildignore+=*.bak
 set wildignore+=*.class,*.o,*.obj,*.rbc
-set wildignore+=*.gem,vendor/jruby/*,vendor/twist*,vendor/**/*_spec.rb,vendor/**/*_test.rb,reports/*,vendor/jruby/*,vendor/java/*,vendor/twist-libs/*,vendor/twist-test-libs/*,vendor/gems/*
+set wildignore+=*.gem,vendor/jruby/*,vendor/twist*,vendor/**/*_spec.rb,vendor/**/*_test.rb,reports/*,vendor/jruby/*,vendor/java/*,vendor/twist-libs/*,vendor/twist-test-libs/*,vendor/gems/*,vendor/ruby/**/*.h,vendor/ruby/**/*.c,vendor/ruby/**/*.cpp
 set wildignore+=*.log,log/*
 set wildignore+=*.tmp,tmp/*
 set wildignore+=.git,.svn,.hg
