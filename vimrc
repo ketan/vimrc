@@ -1,4 +1,5 @@
 call pathogen#infect()
+Helptags                "add local help, provided by pathogen
 
 " This is likely a bludgeon to solve some other issue, but it works
 " Without setting this, ZoomWin restores windows in a way that causes
