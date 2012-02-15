@@ -1,22 +1,9 @@
 call pathogen#infect()
 Helptags                "add local help, provided by pathogen
 
-" This is likely a bludgeon to solve some other issue, but it works
-" Without setting this, ZoomWin restores windows in a way that causes
-" automatically reload files changed outside of vim
-" display EOL character
-" enhanced mode command line completion
-" equalalways behavior to be triggered the next time CommandT is used.
-" helptags ~/.vim/doc    " add local help!
-" persistent undo
-" press f2 to disable all smartness when pasting
-" set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<   " Show $ at end of line and trailing space as ~
-" set list
-" the color of the EOL character
 
-color desert " Default color scheme
+" color desert      " Default color scheme
 color vividchalk  " the colortheme
-
 
 set autoindent              " copy indent from current line when starting a new line
 set autoread                " autoload a file that has changed outside of vim
