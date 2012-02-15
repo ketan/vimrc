@@ -1,0 +1,21 @@
+"Command-T configuration
+let g:CommandTMatchWindowAtTop=1
+let g:CommandTAcceptSelectionMap='<M-CR>'
+let g:CommandTAcceptSelectionTabMap='<CR>'
+" Command-T configuration
+let g:CommandTMaxHeight=20
+
+" Save all buffers on losing focus
+autocmd FocusGained * CommandTFlush
+
+if has("gui_macvim")
+  " Command-T for CommandT
+  macmenu File.New\ Tab key=<nop>
+  nmap <D-t> :CommandT<CR>
+  imap <D-t> <ESC>:CommandT<CR>
+else
+  " Ctrl-T for Command-T
+  map <C-t> :CommandT<CR>
+  imap <C-t> <Esc>:CommandT<CR>
+endif
+

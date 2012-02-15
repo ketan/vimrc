@@ -84,9 +84,6 @@ set wildmode=list:longest,list:full " Tab completion
 syntax on               "enable syntax highlight
 
 
-" Command-T configuration
-let g:CommandTMaxHeight=20
-
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
 
@@ -343,11 +340,6 @@ let g:rails_default_file='config/database.yml'
 let g:rails_menu=2
 au FileType diff color desert
 
-"Command-T configuration
-let g:CommandTMatchWindowAtTop=1
-let g:CommandTAcceptSelectionMap='<M-CR>'
-let g:CommandTAcceptSelectionTabMap='<CR>'
-
 " no more :wq, just ;wq
 nnoremap ; :
 " Rails configuration
@@ -425,7 +417,7 @@ imap <C-]> <ESC><C-]>
 let g:rails_ctags_arguments='--exclude="**/vendor/jruby" --exclude="**/vendor/twist-libs" --exclude="**/vendor/ruby/**/*/_test.rb" --exclude="**/vendor/ruby/**/*/_spec.rb" --exclude="**/reports*" --exclude="**/vendor/ruby/**/*.c" --exclude="**/vendor/ruby/**/*.h"'
 
 
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.nerdtree"))
-  source ~/.vimrc.nerdtree
+if filereadable(expand("~/.vim/vimrc.nerdtree"))
+  source ~/.vim/vimrc.nerdtree
 endif
+

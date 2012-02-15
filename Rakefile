@@ -80,11 +80,18 @@ task :clone => :"diff-syntax"
 
 desc "install vimrc"
 task :install_vimrc do
-  %w(vimrc gvimrc vimrc.nerdtree).each do |file|
+  %w(vimrc gvimrc).each do |file|
     dest = File.expand_path("~/.#{file}")
     rm_f  dest
     ln_s  File.expand_path("../#{file}", __FILE__), dest
   end
+
+  %w(vimrc.nerdtree gvimrc.command-t).each do |file|
+    dest = File.expand_path("~/.vim/#{file}")
+    rm_f  dest
+    ln_s  File.expand_path("../#{file}", __FILE__), dest
+  end
+
 end
 
 desc "default"

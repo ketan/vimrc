@@ -8,11 +8,6 @@ if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
-  " Command-T for CommandT
-  macmenu File.New\ Tab key=<nop>
-  nmap <D-t> :CommandTFlush<CR>:CommandT<CR>
-  imap <D-t> <ESC>:CommandTFlush<CR>:CommandT<CR>
-
   "CMD+SHIFT+T to open tagbar
   macmenu File.Open\ Tab\.\.\. key=<nop>
   map <D-T> :TagbarOpen<CR>/
@@ -87,9 +82,6 @@ if has("gui_macvim")
   map <D-M-Left> <C-w>h
   imap <D-M-Left> <C-w>h
 else
-  " Ctrl-T for Command-T
-  map <C-t> :CommandT<CR>
-  imap <C-t> <Esc>:CommandT<CR>
 
   " Ctrl-Shift-F for Ack
   map <C-F> :Ack<space>
@@ -135,4 +127,8 @@ endfunction
 autocmd BufWritePost .vimrc source %
 autocmd BufWritePost .vimrc source ~/.gvimrc
 autocmd BufWritePost .gvimrc source %
+
+if filereadable(expand("~/.vim/gvimrc.command-t"))
+  source ~/.vim/gvimrc.command-t
+endif
 
