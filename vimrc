@@ -414,7 +414,7 @@ map <C-]> :tab split<CR>:exec("tjump ".expand("<cword>"))<CR>
 imap <C-]> <ESC><C-]>
 
 " the default disables ctags from indexing javscript!
-let g:rails_ctags_arguments='--exclude="**/vendor/jruby" --exclude="**/vendor/twist-libs" --exclude="**/vendor/ruby/**/*/_test.rb" --exclude="**/vendor/ruby/**/*/_spec.rb" --exclude="**/reports*" --exclude="**/vendor/ruby/**/*.c" --exclude="**/vendor/ruby/**/*.h"'
+let g:rails_ctags_arguments='-f tmp/ctags --exclude="**/vendor/jruby" --exclude="**/vendor/twist-libs" --exclude="**/vendor/ruby/**/*/_test.rb" --exclude="**/vendor/ruby/**/*/_spec.rb" --exclude="**/reports*" --exclude="**/vendor/ruby/**/*.c" --exclude="**/vendor/ruby/**/*.h"'
 
 
 if filereadable(expand("~/.vim/vimrc.nerdtree"))
