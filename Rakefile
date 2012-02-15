@@ -37,8 +37,14 @@ task :clone
    "rvm"                => "git://github.com/tpope/vim-rvm.git",
    "scala"              => "git://github.com/bdd/vim-scala.git",
    "searchfold"         => "git://github.com/vim-scripts/searchfold.vim.git",
-   "snipmate"           => "git://github.com/msanders/snipmate.vim.git",
-   "snipmate-snippets"  => "git://github.com/scrooloose/snipmate-snippets.git",
+    # begin snipmate dependencies, only required by this fork
+   "snipmate"           => "git://github.com/garbas/vim-snipmate.git",
+   "tlib"               => "git://github.com/tomtom/tlib_vim.git",
+   "vim-addon-mw-utils" => "git://github.com/MarcWeber/vim-addon-mw-utils.git",
+   "snipmate-snippets"  => "git://github.com/honza/snipmate-snippets",
+   # end snipmate dependencies
+   # "snipmate"           => "git://github.com/msanders/snipmate.vim.git",
+   # "snipmate-snippets"  => "git://github.com/scrooloose/snipmate-snippets.git",
    "solarized"          => "git://github.com/altercation/vim-colors-solarized.git",
    "surround"           => "git://github.com/tpope/vim-surround.git",
    "syntastic"          => "git://github.com/scrooloose/syntastic.git",
@@ -94,8 +100,13 @@ task :install_vimrc do
 
 end
 
+desc "install_snippets"
+task :install_snippets do
+  ln_s File.expand_path("../snippets", __FILE__), File.expand_path('~/.vim/') unless File.exist?(File.expand_path('~/.vim/snippets'))
+end
+
 desc "default"
-task :default => [:init, :install_pathogen, :install_vimrc, :clone]
+task :default => [:init, :install_pathogen, :install_vimrc, :install_snippets, :clone]
 
 desc "clean"
 task :clean do
