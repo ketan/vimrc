@@ -171,8 +171,8 @@ let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
 let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
                                 " and a double click to open files
 let NERDTreeChDirMode=0           " Never change the CWD when switching files
-"let NERDTreeMapOpenInTab='o'      " Ensure that files open in a new tab
-let NERDTreeMapOpenInTab='<CR>'   " Ensure that files open in a new tab
+let NERDTreeMapOpenInTab='o'      " Ensure that files open in a new tab
+" let NERDTreeMapOpenInTab='<CR>'   " Ensure that files open in a new tab
 
 " pop open nerdtree on CTRL+SHIFT+R
 map <C-S-R> :NERDTreeFind<CR>

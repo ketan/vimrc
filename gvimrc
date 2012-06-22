@@ -13,7 +13,7 @@ if has("gui_macvim")
   map <D-T> :TagbarOpen<CR>/
   imap <D-T> <ESC><D-T>
 
-  "Run tests Ruby/Rails
+  "Run tests Rails
   "All tests: CMD-R
   autocmd User Rails imap <D-r> <ESC>:Rake<CR>
   autocmd User Rails nmap <D-r> :Rake<CR>
@@ -21,6 +21,16 @@ if has("gui_macvim")
   "Single test: CMD+SHIFT+R
   autocmd User Rails imap <D-R> <ESC>:.Rake"<CR>
   autocmd User Rails nmap <D-R> :.Rake"<CR>
+
+
+  "Run tests Ruby
+  "All tests: CMD-R
+  autocmd BufReadPost *_test.rb imap <D-r> <ESC><Plug>RubyFileRun
+  autocmd BufReadPost *_test.rb map  <D-r> <Plug>RubyFileRun
+
+  "Single test: CMD+SHIFT+R
+  autocmd BufReadPost *_test.rb imap <D-R> <ESC><Plug>RubyTestRun
+  autocmd BufReadPost *_test.rb map  <D-R> <Plug>RubyTestRun
 
 
   set guioptions-=LlRrb " don't show any scrollbars, yeah it's a bug
