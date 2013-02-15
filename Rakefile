@@ -15,7 +15,7 @@ task :clone
    "bundler"            => "git://github.com/tpope/vim-bundler.git",
    "chef"               => "git://github.com/t9md/vim-chef.git",
    "coffee-script"      => "git://github.com/kchmck/vim-coffee-script.git",
-   "color-sampler"      => "git://github.com/vim-scripts/Color-Sampler-Pack.git",
+   "color-sampler"      => "git://github.com/vim-scripts/Colour-Sampler-Pack.git",
    "cucumber"           => "git://github.com/tpope/vim-cucumber.git",
    "endwise"            => "git://github.com/tpope/vim-endwise.git",
    "fugitive"           => "git://github.com/tpope/vim-fugitive.git",
